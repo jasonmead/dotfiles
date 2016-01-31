@@ -1,0 +1,8 @@
+#!/bin/sh
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+
+source ~/.gvm/scripts/gvm
+
+gvm install go1.4
+gvm use go1.4
+gvm install go1.5
