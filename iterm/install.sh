@@ -1,2 +1,2 @@
 #!/bin/sh
-brew cask install iterm2
+brew_cask_install iterm2

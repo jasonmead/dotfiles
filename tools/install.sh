@@ -1,10 +1,8 @@
 #!/bin/bash
-brew install git
-brew install bash-completion
-brew install curl
-brew install jq
-brew install wget
+brew_install git
+brew_install bash-completion
+brew_install curl
+brew_install jq
+brew_install wget
 
-brew install docker
-
-brew cask install tcl
+brew_install docker

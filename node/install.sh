@@ -1,16 +1,27 @@
 #!/bin/bash
 
-brew install nvm
+npm_install () {
+  if ! command_exists "$1" ; then
+    echo "Installing $1"
+    npm install -g "$1"
+  else
+    echo "Updating $1"
+    npm update -g "$1"
+  fi
+}
 
-mkdir -p ~/.nvm
+if ! command_exists nvm ; then
+  brew install nvm
 
-export NVM_DIR=~/.nvm
-. $(brew --prefix nvm)/nvm.sh
+  mkdir -p ~/.nvm
+
+  export NVM_DIR=~/.nvm
+  . $(brew --prefix nvm)/nvm.sh
+fi
 
 nvm install node
-nvm use node
 
-npm install -g grunt-cli
-npm install -g bower
-npm install -g yo
-npm install -g express-generator
+npm_install grunt-cli
+npm_install bower
+npm_install yo
+npm_install express-generator

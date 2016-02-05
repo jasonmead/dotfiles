@@ -1,11 +1,6 @@
 #!/bin/sh
 source ~/dotfiles/go/source.sh
-source ~/dotfiles/vscode/source.sh
 source ~/dotfiles/node/source.sh
-
-if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-    . "$(brew --prefix)/etc/bash_completion"
-fi
 
 alias showHidden='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideHidden='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
