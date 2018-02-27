@@ -1,5 +1,4 @@
 #!/bin/sh
-source ~/dotfiles/go/source.sh
 source ~/dotfiles/node/source.sh
 
 alias showHidden='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'

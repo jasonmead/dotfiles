@@ -25,3 +25,4 @@ npm_install grunt-cli
 npm_install bower
 npm_install yo
 npm_install express-generator
+npm_install nodemon

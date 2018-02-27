@@ -34,7 +34,6 @@ source ~/dotfiles/tools/install.sh
 source ~/dotfiles/node/install.sh
 source ~/dotfiles/atom/install.sh
 source ~/dotfiles/iterm/install.sh
-source ~/dotfiles/go/install.sh
 
 brew cask cleanup
 brew cleanup
